@@ -121,8 +121,8 @@ func NewSessions(com *common.Common, selectedSessionID string) (*Session, error)
 		key.WithHelp("esc", "cancel"),
 	)
 	s.keyMap.ConfirmDelete = key.NewBinding(
-		key.WithKeys("y"),
-		key.WithHelp("y", "delete"),
+		key.WithKeys("y", "ctrl+x"),
+		key.WithHelp("y or ctrl+x", "confirm"),
 	)
 	s.keyMap.CancelDelete = key.NewBinding(
 		key.WithKeys("n", "esc"),
